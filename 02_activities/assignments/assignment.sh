@@ -23,7 +23,7 @@ unzip rawdata.zip
 
 # 1. Create a directory named data
 mkdir data
-#pwd
+pwd
 
 # 2. Move the ./rawdata directory to ./data/raw
 #mkdir ./data/raw
@@ -51,7 +51,7 @@ cp ./raw/*event*.log ./processed/event_logs
 #pwd
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
-rm *ipaddr* 
+rm ./raw/*ipaddr* 
 rm ./processed/user_logs/*ipaddr*
 #pwd
 
